@@ -67,12 +67,14 @@ class Entity:
             self.hits = []
             self.collisions = {"up":False, "down":False, "left":False, "right":False, "movingPlatform":False}
             if self.maxJumps == 2:
-                if self.climbShock >= 0:
+                if self.climbShock > 0:
                     self.movement = [max(self.climbShock-0.5,0)+(self.speed *(self.game.movement[1] - self.game.movement[0])), min(self.movement[1]+self.gravity,7)]#[max(mself.climbShock-0.5,0)+(self.speed *(self.game.movement[1] - self.game.movement[0])), min(self.movement[1]+self.gravity, 7)] # Terminal Velocity Also Set
                     self.climbShock -= 1
-                else:
+                elif self.climbShock < 0:
                     self.movement = [min(self.climbShock+0.5,0)+(self.speed *(self.game.movement[1] - self.game.movement[0])), min(self.movement[1]+self.gravity,7)]#[min(self.climbShock+0.5,0)+(self.speed *(self.game.movement[1] - self.game.movement[0])), min(self.movement[1]+self.gravity, 7)]
                     self.climbShock += 1
+                else:
+                    self.movement = [min(self.climbShock+0.5,0)+(self.speed *(self.game.movement[1] - self.game.movement[0])), min(self.movement[1]+self.gravity,7)]#[min(self.climbShock+0.5,0)+(self.speed *(self.game.movement[1] - self.game.movement[0])), min(self.movement[1]+self.gravity, 7)]
             else:
                 self.movement = [self.movement[0],min(self.movement[1]+self.gravity,7)]
             # If fall counter exceeds a certain value, the player "dies"
