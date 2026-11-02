@@ -1,4 +1,3 @@
-# Actual-Project
 # 🏹 Bobbin Dud
 
 *A 2D medieval-themed platformer developed in Python using Pygame.*
@@ -192,3 +191,4 @@ The following success criteria outline the planned development of the game, from
   - Introduce an additional risk/reward mechanic that encourages exploration and interaction with the environment.
 
 ---
+The bulk of this README.md was beautified via ChatGPT
