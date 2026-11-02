@@ -191,4 +191,9 @@ The following success criteria outline the planned development of the game, from
   - Introduce an additional risk/reward mechanic that encourages exploration and interaction with the environment.
 
 ---
+## Bugfixes That Need To Happen
+- Speed Upgrades Work Terribly- The player can easily phase through tiles.
+- Enemies Can Get Stuck Moving Around- Allow them to roam up and down tiles.
+- Decor Renders After Movement- It wiggles around onscreen.
+These will eventually be fixed by me
 The bulk of this README.md was beautified via ChatGPT
