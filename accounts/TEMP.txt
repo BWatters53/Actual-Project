@@ -2,7 +2,7 @@
 [PASSWORD]: 1234
 
 [STATS]:
-    [no. jumps]: 5
-    [total score]: 15
+    [no. jumps]: 4
+    [total score]: 0
     [no. deaths]: 0
 [LEVEL]:
